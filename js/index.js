@@ -23,7 +23,7 @@ checkbox.addEventListener('click', () => {
         body.classList.remove('dark-body')
         darkTitle.classList.remove('dark-title-bg');
         overviewHeading.style.color = 'black';
-        switchText.style.color = 'white';
+        switchText.style.color = 'gray';
         for(let i = 0; i < totalCount.length; i++) {
             totalCount[i].classList.remove('total-count-dark');
         }
