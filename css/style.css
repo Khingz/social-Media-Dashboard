@@ -1,0 +1,345 @@
+@import url("https://fonts.google.com/specimen/Inter");
+body {
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+/* main {
+    width: 100%
+} */
+
+
+.top-title-bg {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0 0 1rem 1rem;
+    height: 16rem;
+    width: 100%;
+}
+
+.top-title {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.title-info > h2{
+    font-size: 2.4rem;
+    margin-top: 2.5rem;
+}
+
+.title-info > p {
+    margin-top: -1.7em;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+
+
+.switch-container {
+    display: flex;
+    align-items: center;
+}
+
+.switch-container .switch-text {
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.total-count-container {
+    width: 70%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.total-count {
+    background-color: hsl(227, 47%, 96%);
+    width: 50%;
+    height: 12em;
+    margin-right: 1rem;
+    margin-top: -6rem;
+    border-radius: .6rem;
+    border-top: solid .25rem  hsl(208, 92%, 53%);
+    cursor: pointer;
+}
+
+.total-count:nth-child(2) {
+    border-top: solid .25rem hsl(203, 89%, 53%);
+
+}
+
+.total-count:nth-child(3) {
+   border-radius: .6rem;
+   border-top:  solid .25rem transparent;
+   border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+   border-image-slice: 1;
+}
+
+.total-count:nth-child(4) {
+    border-top: solid .25rem hsl(348, 97%, 39%);
+
+}
+
+.user-details {
+    margin-top: 1em;
+}
+
+.user-details > span {
+    margin-bottom: 43em;
+    margin-left: .4em;
+    font-size: .9rem;
+}
+
+.user-details > img {
+    margin-bottom: -.26em;
+}
+
+.total-count > h3 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 0;
+    margin-top: .3em
+}
+
+.total-count > p {
+    font-size: .7em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    margin: 0;
+    margin-top: .2em;
+}
+
+.today-count {
+    margin-top: 1.5em;
+}
+
+.today-count img {
+    margin-bottom: .16rem;
+}
+
+.today-count span {
+    font-size: .8em;
+    margin-left: .3em;
+    color: hsl(163, 72%, 41%);
+}
+
+.overview {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.overview > h2 {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    color: hsl(228, 12%, 44%);
+    text-align: left;
+}
+
+.overview-details-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-details {
+    background-color: hsl(227, 47%, 96%);
+    width: 50%;
+    margin-right: 1em;
+    margin-bottom: 1rem;
+    padding: 0 1.3em;
+    border-radius: .6em;
+    cursor: pointer;
+}
+
+.overview-details .top-view {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-details .top-view h6 {
+    color: hsl(228, 12%, 44%);
+    font-size: .8em;
+}
+
+.overview-details .top-view img {
+    height: 1.3em;
+    margin-top: 1.6em;
+}
+
+.overview-details .bottom-view {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3em;
+}
+
+.overview-details:hover, .total-count:hover {
+    background-color: hsl(231, 29%, 86%);
+}
+
+.bottom-view h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: -.25em;
+
+}
+
+.all-count span {
+    color: hsl(163, 72%, 41%);
+    font-size: .8em;
+}
+
+.all-count img {
+    margin-bottom: .16rem;
+}
+
+/* toggle box */
+.icon-switch {
+    position: relative;
+    display: inline-block;
+    width: 3.3rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    background-color: hsl(230, 22%, 74%);
+}
+
+.icon-switch::after {
+    content: '';
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: white;
+    top: .25rem;
+    left: .2rem;
+    transition: all .3s;
+}
+
+.check-box:checked + .icon-switch::after {
+    left: 1.85rem;
+}
+
+.check-box:checked + .icon-switch {
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%),  hsl(146, 68%, 55%));
+}
+
+.check-box {
+    opacity: 0;
+    margin: 0;
+    width: 3.7em;
+    height: 2rem;
+    position: absolute;
+    z-index: 2;
+}
+
+/* DarkMood */
+.dark-body {
+    background-color: hsl(230, 17%, 14%);
+    color: white;
+}
+
+.dark-title-bg {
+    background-color: hsl(232, 19%, 15%);
+}
+
+.total-count-dark {
+    background-color: hsl(232, 19%, 15%);
+}
+
+.heading-dark {
+    color: white;
+}
+
+.overview-details-dark {
+    background-color: hsl(232, 19%, 15%);
+}
+
+.overview-details-dark:hover, .total-count-dark:hover {
+    background-color: hsl(231, 14%, 30%);
+}
+
+
+/* mediaQUery */
+@media screen and (max-width :425px) {
+    /* #top-title-bg {
+        height: 12rem;
+    } */
+
+    .top-title {
+        width: 91%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .title-info > h2{
+        font-size: 1.4rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .line {
+        border-top: 1px solid hsl(228, 12%, 44%);
+        margin-top: 1em;
+    }
+    .switch-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-top: 1.5em;
+    }
+
+    .total-count-container {
+        width: 100%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .total-count {
+        width: 90%;
+        height: 12em;
+        margin: 0;
+        margin-top: -3rem;
+        margin-bottom: 4rem;
+    }
+
+    .overview {
+        text-align: center;
+        margin-top: -5rem;
+    }
+
+    .overview-details-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .overview-details {
+        width: 90%;
+        margin: 0;
+    
+        margin-bottom: 1rem;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
